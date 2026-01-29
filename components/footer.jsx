@@ -1,16 +1,11 @@
 import Link from 'next/link';
 
 export function Footer() {
-    return (
-        <footer className="pt-16 pb-12 sm:pt-24 sm:pb-16">
-            <p className="text-sm">
-                <Link
-                    href="https://docs.netlify.com/frameworks/next-js/overview/"
-                    className="decoration-dashed text-primary underline-offset-8"
-                >
-                    Next.js on Netlify
-                </Link>
-            </p>
-        </footer>
-    );
+  return (
+    <footer className="border-t border-eggshell-200 pt-12 pb-10 sm:pt-16 sm:pb-12">
+      <p className="font-heading text-sm font-medium text-navy-black-300">
+        © {new Date().getFullYear()} DANK Studio. Laid back, no corporate buzz.
+      </p>
+    </footer>
+  );
 }

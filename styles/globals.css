@@ -1,52 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap');
 
 @import 'tailwindcss';
 
 @theme {
     --background-image-noise: linear-gradient(
             to bottom,
-            color-mix(in oklab, var(--color-neutral-950) 0%, transparent),
-            color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
+            color-mix(in oklab, var(--color-navy-black) 0%, transparent),
+            color-mix(in oklab, var(--color-navy-black) 100%, transparent)
         ),
         url('/images/noise.png');
-    --color-primary: #2bdcd2;
-    --color-primary-content: #171717;
-    --color-secondary: #016968;
+    --color-dank-orange: #ea562d;
+    --color-dank-orange-200: #e97a60;
+    --color-dank-orange-300: #e79686;
+    --color-dank-orange-400: #e4b9b2;
+    --color-navy-black: #141a1e;
+    --color-navy-black-200: #282c2d;
+    --color-navy-black-300: #464b4c;
+    --color-navy-black-400: #848c8d;
+    --color-muted-yellow: #e07d33;
+    --color-muted-yellow-200: #c97c50;
+    --color-muted-yellow-300: #b68774;
+    --color-muted-yellow-400: #dab9aa;
+    --color-eggshell: #e5e2b9;
+    --color-eggshell-200: #d1cb9e;
+    --color-eggshell-300: #ddd6a1;
+    --color-eggshell-400: #ede7ae;
+    --color-off-white: #f9f9e2;
+    --color-off-white-200: #ecebe0;
+    --color-off-white-300: #f9f9ed;
+    --color-off-white-400: #fafaf2;
+    --color-primary: var(--color-dank-orange);
+    --color-primary-content: var(--color-off-white);
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
+    --font-heading: 'Lora', ui-serif, Georgia, serif;
 }
 
 @layer base {
+    h1,
+    h2,
+    h3 {
+        font-family: var(--font-heading);
+    }
+
     h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl;
+        @apply text-4xl font-semibold tracking-tight sm:text-5xl;
+        line-height: 100%;
     }
 
     h2 {
-        @apply text-2xl font-bold sm:text-3xl;
+        @apply text-2xl font-semibold sm:text-3xl;
+        line-height: 100%;
     }
 
     h3 {
-        @apply text-xl font-bold;
+        @apply text-xl font-semibold;
     }
 
     a:not(.btn) {
-        @apply underline transition hover:opacity-80;
+        @apply transition hover:opacity-80;
     }
 
     :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
+        @apply px-1 py-0.5 font-mono rounded bg-navy-black-200 text-muted-yellow;
         font-size: 0.9em;
     }
 }
 
 @layer components {
+    .font-heading {
+        font-family: var(--font-heading);
+    }
+
     .markdown {
         > * {
             @apply my-4;
         }
 
         :where(h1, h2) {
-            @apply mt-12 mb-6;
+            @apply mt-12 mb-6 text-navy-black;
         }
 
         > :first-child {
@@ -59,17 +92,17 @@
     }
 
     .btn {
-        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-primary text-primary-content;
+        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-dank-orange text-off-white;
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
         border-radius: var(--btn-border-radius, 0.25rem);
 
         &:hover {
-            @apply bg-primary/85;
+            @apply bg-dank-orange-200;
         }
 
         &:disabled {
-            @apply cursor-default text-neutral-400 bg-neutral-700;
+            @apply cursor-default text-navy-black-400 bg-navy-black-300;
         }
     }
 
@@ -80,7 +113,7 @@
     }
 
     .input {
-        @apply px-4 py-3 text-sm border rounded-sm border-neutral-300 text-neutral-900 focus:border-primary focus:outline-3 focus:outline-primary/30;
+        @apply px-4 py-3 text-sm border rounded-sm border-navy-black-300 text-navy-black focus:border-dank-orange focus:outline-3 focus:outline-dank-orange/30;
     }
 
     .diff {
