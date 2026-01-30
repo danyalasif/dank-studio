@@ -13,12 +13,12 @@ export default function Page() {
       </Link>
       <h1 className="font-heading mb-4 text-navy-black">Copywriting</h1>
       <p className="mb-6 text-lg text-navy-black-300">
-        Voice and words that actually sound like you—no corporate fluff, no generic tone.
+        Voice and words that actually sound like you, no corporate fluff, no generic tone.
       </p>
       <section className="space-y-6 text-navy-black-300">
         <p>
           We write for brands that want to sound human: websites, social, emails, and one-off campaigns. We
-          match your voice and your audience so the copy does the job—inform, persuade, or entertain—without
+          match your voice and your audience so the copy does the job, inform, persuade, or entertain, without
           feeling like it was written by a committee.
         </p>
         <p>

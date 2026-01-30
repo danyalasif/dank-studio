@@ -13,7 +13,7 @@ export default function Page() {
       </Link>
       <h1 className="font-heading mb-4 text-navy-black">Social media & infographics</h1>
       <p className="mb-6 text-navy-black-300">
-        We create scroll-stopping visuals and infographics for TikTok, Instagram, and LinkedIn—aligned with your
+        We create scroll-stopping visuals and infographics for TikTok, Instagram, and LinkedIn, aligned with your
         brand so everything feels like one voice.
       </p>
       <section className="space-y-6 text-navy-black-300">
@@ -21,7 +21,7 @@ export default function Page() {
           <h2 className="font-heading mb-2 text-lg font-semibold text-navy-black">How we do it</h2>
           <p>
             We start with your goals and audience: who’s scrolling, what should they take away, and where it lives
-            (TikTok, Reels, carousels, etc.). Then we shape the concept—hook, structure, and visual style—so it
+            (TikTok, Reels, carousels, etc.). Then we shape the concept, hook, structure, and visual style, so it
             fits your brand and platform. We design and (where needed) edit; you get files ready to post or a
             short handover so your team can run with it.
           </p>

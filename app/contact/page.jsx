@@ -13,7 +13,7 @@ export default function Page() {
       </Link>
       <h1 className="font-heading mb-2 text-navy-black">Say hi</h1>
       <p className="mb-8 text-navy-black-300">
-        Ready to shape your digital identity? Drop us a line—we’re laid back and here to help.
+        Ready to shape your digital identity? Drop us a line, we’re laid back and here to help.
       </p>
       <p className="text-navy-black-300">
         For now, reach out via{' '}

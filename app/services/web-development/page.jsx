@@ -13,7 +13,7 @@ export default function Page() {
       </Link>
       <h1 className="font-heading mb-4 text-navy-black">Web development</h1>
       <p className="mb-6 text-lg text-navy-black-300">
-        Sites that work and feel right—fast, clear, and aligned with your brand.
+        Sites that work and feel right, fast, clear, and aligned with your brand.
       </p>
       <section className="space-y-6 text-navy-black-300">
         <p>
@@ -23,7 +23,7 @@ export default function Page() {
         </p>
         <p>
           From landing pages and portfolios to more complex sites and apps, we handle structure, design
-          implementation, and build—and we explain what we’re doing so you’re not left in the dark.
+          implementation, and build, and we explain what we’re doing so you’re not left in the dark.
         </p>
         <Link href="/#contact" className="btn mt-8">
           Get in touch

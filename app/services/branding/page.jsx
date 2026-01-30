@@ -13,13 +13,13 @@ export default function Page() {
       </Link>
       <h1 className="font-heading mb-4 text-navy-black">Branding</h1>
       <p className="mb-6 text-lg text-navy-black-300">
-        Identity, guidelines, and a look that sticks—so your brand is recognisable and consistent everywhere.
+        Identity, guidelines, and a look that sticks, so your brand is recognisable and consistent everywhere.
       </p>
       <section className="space-y-6 text-navy-black-300">
         <p>
           We don’t do “brand” as a one-off logo drop. We build a system: logo, colour, type, imagery, and tone
           that work together. That way, whether it’s your website, social, or print, it all feels like one
-          thing—and you (or anyone you work with) can use it without making it up as you go.
+          thing, and you (or anyone you work with) can use it without making it up as you go.
         </p>
         <p>
           Our process is straightforward: we get clear on who you are and who you’re for, then we explore

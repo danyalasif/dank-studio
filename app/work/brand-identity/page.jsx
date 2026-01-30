@@ -28,7 +28,7 @@ export default function Page() {
         <div>
           <h2 className="font-heading mb-2 text-lg font-semibold text-navy-black">What you get</h2>
           <p>
-            A cohesive identity—logo, palette, typography, and usage rules—plus files and a simple guide. No
+            A cohesive identity, logo, palette, typography, and usage rules, plus files and a simple guide. No
             corporate buzz; we keep it practical so you can run with it on your own or with other partners.
           </p>
         </div>

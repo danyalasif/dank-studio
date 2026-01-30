@@ -3,14 +3,14 @@ import Link from 'next/link';
 const uspCards = [
   {
     title: 'Close connection, not a ticket queue',
-    body: 'You work directly with the same small team—no handoffs, no “we’ll pass it to another department.” We stay in the loop from idea to launch.',
+    body: 'You work directly with the same small team, no handoffs, no “we’ll pass it to another department.” We stay in the loop from idea to launch.',
     skew: '-2deg',
     bg: 'bg-dank-orange-300',
     text: 'text-navy-black'
   },
   {
     title: 'All in one package',
-    body: 'Branding, copy, and web in one place. One brief, one vision, one consistent identity—no juggling multiple agencies or fixing mismatched tone and look.',
+    body: 'Branding, copy, and web in one place. One brief, one vision, one consistent identity, no juggling multiple agencies or fixing mismatched tone and look.',
     skew: '1.5deg',
     bg: 'bg-navy-black-200',
     text: 'text-off-white-400'
@@ -83,7 +83,7 @@ export default function Page() {
       <section id="services" className="scroll-mt-8 bg-off-white-200 px-8 py-20 sm:px-12 sm:py-28 md:px-16 md:py-36 lg:px-24 xl:px-32">
         <div className="w-full">
           <h2 className="font-heading mb-2 text-navy-black">What we do (pick one)</h2>
-          <p className="mb-10 text-navy-black-300">Three ways we help—often together.</p>
+          <p className="mb-10 text-navy-black-300">Three ways we help, often together.</p>
           <ul className="flex flex-wrap gap-4">
             {serviceItems.map((item) => (
               <li key={item.href}>
@@ -104,7 +104,7 @@ export default function Page() {
         <div className="w-full">
           <h2 className="font-heading mb-2 text-navy-black">Say hi</h2>
           <p className="mb-6 text-navy-black-300">
-            Ready to shape your digital identity? Drop us a line—we’re friendly and don’t do corporate speak.
+            Ready to shape your digital identity? Drop us a line, we’re friendly and don’t do corporate speak.
           </p>
           <Link href="/contact" className="btn btn-lg">
             Contact us
