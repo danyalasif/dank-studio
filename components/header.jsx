@@ -11,7 +11,7 @@ const navItems = [
 
 export function Header() {
   return (
-    <nav className="flex flex-wrap items-center gap-4 pt-6 pb-8 sm:pt-10 sm:pb-12 md:pb-16">
+    <nav className="flex flex-wrap items-center gap-4 bg-off-white px-8 py-6 sm:px-12 sm:py-8 md:px-16 md:py-10 lg:px-24 xl:px-32">
       <Link href="/" className="flex items-center">
         <Image src="/images/dk_logo.png" alt="DANK Studio" width={160} height={48} priority className="h-10 w-auto sm:h-12" />
       </Link>

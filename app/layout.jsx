@@ -17,13 +17,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/images/dk_favicon.png" type="image/png" sizes="any" />
       </head>
-      <body className="font-sans antialiased text-navy-black bg-off-white">
+      <body className="font-sans antialiased text-navy-black">
         <div className="flex min-h-screen flex-col">
-          <div className="mx-auto flex w-full max-w-6xl grow flex-col px-6 sm:px-12">
-            <Header />
-            <main className="grow">{children}</main>
-            <Footer />
-          </div>
+          <Header />
+          <main className="grow">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
