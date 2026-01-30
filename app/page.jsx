@@ -5,22 +5,19 @@ const uspCards = [
     title: 'Close connection, not a ticket queue',
     body: 'You work directly with the same small team, no handoffs, no “we’ll pass it to another department.” We stay in the loop from idea to launch.',
     skew: '-2deg',
-    bg: 'bg-dank-orange-300',
-    text: 'text-navy-black'
+    accent: 'border-l-[8px] border-dank-orange'
   },
   {
     title: 'All in one package',
     body: 'Branding, copy, and web in one place. One brief, one vision, one consistent identity, no juggling multiple agencies or fixing mismatched tone and look.',
     skew: '1.5deg',
-    bg: 'bg-navy-black-200',
-    text: 'text-off-white-400'
+    accent: 'border-l-[8px] border-navy-black'
   },
   {
     title: 'Multi‑talented people who actually ship',
     body: 'Nimra (Head of Content, consultant at two top UK agencies), Hifza (UI/UX, graphics, infographics, TikTok & Instagram/LinkedIn, also at two agencies), and Danyal (Senior Fullstack Engineer). We get it done, whatever you throw at us.',
     skew: '-1deg',
-    bg: 'bg-muted-yellow-400',
-    text: 'text-navy-black'
+    accent: 'border-l-[8px] border-muted-yellow'
   }
 ];
 
@@ -45,8 +42,8 @@ export default function Page() {
             {uspCards.map((card, i) => (
               <div
                 key={i}
-                className={`flex flex-1 flex-col justify-between rounded-lg px-6 py-8 shadow-md ${card.bg} ${card.text}`}
-                style={{ transform: `rotate(${card.skew})` }}
+                className={`usp-card-load-jiggle flex flex-1 flex-col justify-between rounded-lg bg-white px-6 py-8 text-navy-black shadow-md ${card.accent}`}
+                style={{ ['--usp-card-skew']: card.skew, animationDelay: `${i * 0.2}s` }}
               >
                 <div>
                   <h2 className="font-heading mb-3 text-xl font-semibold sm:text-2xl">{card.title}</h2>
