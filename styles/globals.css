@@ -18,20 +18,10 @@
     --color-navy-black-200: #282c2d;
     --color-navy-black-300: #464b4c;
     --color-navy-black-400: #848c8d;
-    --color-muted-yellow: #e07d33;
-    --color-muted-yellow-200: #c97c50;
-    --color-muted-yellow-300: #b68774;
-    --color-muted-yellow-400: #dab9aa;
-    --color-eggshell: #e5e2b9;
-    --color-eggshell-200: #d1cb9e;
-    --color-eggshell-300: #ddd6a1;
-    --color-eggshell-400: #ede7ae;
-    --color-off-white: #f9f9e2;
-    --color-off-white-200: #ecebe0;
-    --color-off-white-300: #f9f9ed;
-    --color-off-white-400: #fafaf2;
+    --color-alice-blue: #ECF5FF;
+    --color-vanilla: #D4E09B; 
     --color-primary: var(--color-dank-orange);
-    --color-primary-content: var(--color-off-white);
+    --color-primary-content: var(--color-alice-blue);
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
     --font-heading: 'Lora', ui-serif, Georgia, serif;
@@ -63,7 +53,7 @@
     }
 
     :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-navy-black-200 text-muted-yellow;
+        @apply px-1 py-0.5 font-mono rounded bg-navy-black-200;
         font-size: 0.9em;
     }
 }
@@ -108,7 +98,7 @@
         }
 
         :where(h1, h2) {
-            @apply mt-12 mb-6 text-navy-black;
+            @apply mt-12 mb-6 text-vanilla;
         }
 
         > :first-child {
@@ -121,7 +111,7 @@
     }
 
     .btn {
-        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-dank-orange text-off-white;
+        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-dank-orange text-alice-blue;
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
         border-radius: var(--btn-border-radius, 0.25rem);
