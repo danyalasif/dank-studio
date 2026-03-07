@@ -20,7 +20,7 @@ const services = [
 
 export function HowWeHelp() {
   return (
-    <section id="services" className="scroll-mt-8 bg-eggshell px-8 py-20 sm:px-12 sm:py-28 md:px-16 md:py-36 lg:px-24 xl:px-32">
+    <section id="services" className="scroll-mt-8 bg-alice-blue px-8 py-20 sm:px-12 sm:py-28 md:px-16 md:py-36 lg:px-24 xl:px-32">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-heading mb-4 text-3xl font-semibold text-navy-black sm:text-4xl">
           How we help
@@ -34,7 +34,7 @@ export function HowWeHelp() {
           <li key={item.href}>
             <Link
               href={item.href}
-              className="group block rounded-xl border border-eggshell-200 bg-white p-6 shadow-sm transition hover:border-dank-orange-200 hover:shadow-md"
+              className="group block rounded-xl border border-alice-blue bg-white p-6 shadow-sm transition hover:border-dank-orange-200 hover:shadow-md"
             >
               <h3 className="font-heading mb-2 text-xl font-semibold text-navy-black group-hover:text-dank-orange">
                 {item.title}

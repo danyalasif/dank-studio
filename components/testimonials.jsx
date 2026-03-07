@@ -23,7 +23,7 @@ export function Testimonials() {
         {testimonials.map((t) => (
           <blockquote
             key={t.quote}
-            className="rounded-xl border border-eggshell-200 bg-white p-6 shadow-sm"
+            className="rounded-xl border border-alice-blue bg-white p-6 shadow-sm" 
           >
             <p className="text-navy-black-300">&ldquo;{t.quote}&rdquo;</p>
             <footer className="mt-4">

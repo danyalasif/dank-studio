@@ -7,7 +7,7 @@ export function Hero() {
       <div className="mx-auto max-w-4xl text-center">
         <p className="mb-4 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wide text-dank-orange">
           <span className="h-1.5 w-1.5 rounded-full bg-dank-orange" aria-hidden />
-          BRANDING · COPY · WEB
+          BRANDING · COPY WRITING · WEB DEVELOPMENT
           <span className="h-1.5 w-1.5 rounded-full bg-dank-orange" aria-hidden />
         </p>
         <h1 className="font-heading mb-6 text-4xl font-semibold leading-tight tracking-tight text-navy-black sm:text-5xl lg:text-6xl">
