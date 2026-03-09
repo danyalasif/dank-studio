@@ -14,7 +14,7 @@ export function OurWork() {
           Work we&apos;ve done
         </h2>
         <p className="mb-12 text-lg text-navy-black-300">
-          Real projects from brands we&apos;ve worked with—branding, copy, and web.
+          Real projects from brands we&apos;ve worked with—strategy, branding, positioning, copywriting, and web development.
         </p>
       </div>
       <ul className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-3">

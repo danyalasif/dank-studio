@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Social media & infographics',
-  description: 'How we approach TikTok, Instagram, LinkedIn carousels and infographics at DANK Studio.'
+  description:
+    'TikTok video editing, Instagram, LinkedIn carousels and infographics. Social media management at DANK Studio.'
 };
 
 export default function Page() {

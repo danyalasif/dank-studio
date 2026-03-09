@@ -8,7 +8,7 @@ export const metadata = {
     default: 'DANK Studio'
   },
   description:
-    'Branding, copywriting, and web development under one roof. We bring a cohesive brand to life for startups and established brands.'
+    'Strategy, branding, and positioning under one roof. Copywriting, web development, social media management. We bring a cohesive brand to life for startups and established brands.'
 };
 
 export default function RootLayout({ children }) {

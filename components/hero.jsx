@@ -7,14 +7,14 @@ export function Hero() {
       <div className="mx-auto max-w-4xl text-center">
         <p className="mb-4 flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-wide text-dank-orange">
           <span className="h-1.5 w-1.5 rounded-full bg-dank-orange" aria-hidden />
-          BRANDING · COPY WRITING · WEB DEVELOPMENT
+          STRATEGY · BRANDING · POSITIONING
           <span className="h-1.5 w-1.5 rounded-full bg-dank-orange" aria-hidden />
         </p>
         <h1 className="font-heading mb-6 text-4xl font-semibold leading-tight tracking-tight text-navy-black sm:text-5xl lg:text-6xl">
           Turn your brand into <span className="italic text-dank-orange">one clear story</span>
         </h1>
         <p className="mb-8 max-w-2xl mx-auto text-lg text-navy-black-300">
-          One team for branding, copy, and web. No handoffs, no corporate buzz—just a cohesive identity that actually fits you.
+          One team for strategy, branding, and positioning. Copywriting, web development, social media—no handoffs, no corporate buzz.
         </p>
         <Link href="/#contact" className="btn btn-lg inline-flex items-center gap-2">
           Get in touch

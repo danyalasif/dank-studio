@@ -3,22 +3,22 @@ import Image from 'next/image';
 import { ArticleLayout } from 'components/article-layout';
 
 const processSteps = [
-  { num: '1', title: 'Discovery', desc: "We get clear on who you are, who you're for, and what already exists." },
-  { num: '2', title: 'Exploration', desc: 'We explore directions—mood, references, and early concepts.' },
-  { num: '3', title: 'Refinement', desc: 'We narrow down, iterate, and lock in the direction.' },
-  { num: '4', title: 'Delivery', desc: 'Final files, guidelines, and a system you can actually use.' }
+  { num: '1', title: 'Position audit', desc: 'Where do you sit today? How are you perceived vs how you want to be?' },
+  { num: '2', title: 'Messaging framework', desc: 'Core message, proof points, and how you differentiate.' },
+  { num: '3', title: 'Voice & tone', desc: 'How you sound and show up—consistent across channels.' },
+  { num: '4', title: 'Content & execution', desc: 'LinkedIn posts, carousels, TikTok—messaging that lands.' }
 ];
 
 const blogPosts = [
-  { title: 'What is personal branding?', href: '/blog/branding/what-is-personal-branding' },
-  { title: 'What is company branding?', href: '/blog/branding/what-is-company-branding' },
-  { title: 'Personal vs company branding: the key differences', href: '/blog/branding/personal-vs-company-branding' }
+  { title: 'What is market positioning?', href: '/blog/positioning/what-is-market-positioning' },
+  { title: 'How to position your personal brand', href: '/blog/positioning/how-to-position-personal-brand' },
+  { title: "Positioning vs branding: what's the difference?", href: '/blog/positioning/positioning-vs-branding' }
 ];
 
 export const metadata = {
-  title: 'Branding',
+  title: 'Positioning',
   description:
-    'Identity, guidelines, logos, and a look that sticks. Web development and website management. DANK Studio branding services.'
+    'Personal brand management, LinkedIn posts, carousels, TikTok video editing. DANK Studio positioning and messaging services.'
 };
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
       <div className="relative h-[280px] w-full overflow-hidden bg-gradient-to-br from-alice-blue via-eggshell to-off-white sm:h-[360px]">
         <Image src="/images/grid-bg.svg" alt="" fill className="object-cover opacity-30" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="font-heading text-4xl font-semibold text-navy-black sm:text-5xl">Branding</h1>
+          <h1 className="font-heading text-4xl font-semibold text-navy-black sm:text-5xl">Positioning</h1>
         </div>
       </div>
       <ArticleLayout
@@ -56,25 +56,25 @@ export default function Page() {
               ← Back to services
             </Link>
             <p className="mb-16 text-xl leading-relaxed text-navy-black-300">
-              Identity, guidelines, and a look that sticks—so your brand is recognisable and consistent everywhere. We don&apos;t do &quot;brand&quot; as a one-off logo drop. We build a system.
+              Where you sit in the market and how you sound. Personal brand management, LinkedIn posts, carousels, TikTok video editing—messaging that differentiates.
             </p>
             <section className="space-y-16">
               <div>
-                <h2 className="font-heading mb-6 text-2xl font-semibold text-navy-black">What branding means to us</h2>
+                <h2 className="font-heading mb-6 text-2xl font-semibold text-navy-black">What positioning means to us</h2>
                 <div className="space-y-6 text-lg leading-relaxed text-navy-black-300">
                   <p>
-                    A brand is more than a logo. It&apos;s the sum of how you look, sound, and feel—across your website, social, print, and anywhere you show up. We build a system: <span className="rounded bg-dank-orange/10 px-1.5 py-0.5 font-medium text-navy-black">logo, colour, type, imagery, and tone</span> that work together.
+                    Positioning is how you&apos;re perceived. It&apos;s the story you tell, the space you own, and why someone should care. We help you own it: the <span className="rounded bg-dank-orange/10 px-1.5 py-0.5 font-medium text-navy-black">core message, the proof points, and the voice</span> that makes you memorable.
                   </p>
                   <p>
-                    That way, whether it&apos;s you or someone you hire, everyone can use it without making it up as they go. No more &quot;what font was that?&quot; or &quot;which version of the logo?&quot;—you have one source of truth.
+                    Whether you&apos;re a founder, a creator, or a company—positioning is what makes you stand out. It&apos;s not what you say you are; it&apos;s what people think when they hear your name.
                   </p>
                   <div className="rounded-xl border-l-4 border-dank-orange bg-alice-blue/50 p-6">
                     <p className="text-navy-black-300">
-                      Consistency builds recognition. When your audience sees your content—on LinkedIn, your site, or a pitch deck—they should know it&apos;s you. That&apos;s what a brand system does.
+                      Strong positioning makes you memorable. When someone has a need, you want to be the first name that comes to mind. That happens when your position is clear, consistent, and differentiated.
                     </p>
                   </div>
                   <p>
-                    We don&apos;t do one-off logo drops. We explore directions, refine, and lock it in with simple guidelines and files you can actually use. Web development and website management are available when you need a site that matches your brand.
+                    We build messaging frameworks that work across channels—LinkedIn, TikTok, your website, your sales deck. One story, one voice, everywhere you show up.
                   </p>
                 </div>
               </div>
@@ -82,13 +82,13 @@ export default function Page() {
                 <h2 className="font-heading mb-6 text-2xl font-semibold text-navy-black">How we work with you</h2>
                 <div className="space-y-6 text-lg leading-relaxed text-navy-black-300">
                   <p>
-                    We start with your goals and audience. No cookie-cutter process—we adapt to what you need. If you have existing assets, we build on them. If you&apos;re starting from scratch, we explore from a clean slate.
+                    We start with where you are and where you want to be. We build a messaging framework—what to say, how to say it, and how it differs from everyone else. Then we execute: LinkedIn posts, carousels, TikTok content, social media management.
                   </p>
                   <p>
-                    Our process is straightforward: we get clear on who you are and who you&apos;re for, then we explore directions, refine, and lock it in. You get guidelines, files, and a system—not a one-and-done deliverable.
+                    Copywriting and web development feed into one clear position. Your site, your social, your sales materials—they all tell the same story. We scope it to fit your brief.
                   </p>
                   <p>
-                    <span className="font-medium text-dank-orange">We scope it to fit.</span> Copywriting, social media management, and personal brand support are available as part of a full package when the brief calls for it.
+                    <span className="font-medium text-dank-orange">We scope it to fit.</span> Some clients need a full messaging refresh plus ongoing content. Others need the framework and a handover. We adapt.
                   </p>
                 </div>
               </div>

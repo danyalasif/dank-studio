@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Web development',
-  description: 'Sites that work and feel right. DANK Studio web development services.'
+  description:
+    'Sites that work and feel right. Web development and website management. DANK Studio web development services.'
 };
 
 export default function Page() {
@@ -24,6 +25,9 @@ export default function Page() {
         <p>
           From landing pages and portfolios to more complex sites and apps, we handle structure, design
           implementation, and build, and we explain what we’re doing so you’re not left in the dark.
+        </p>
+        <p>
+          Web development and website management sit within our <Link href="/services/branding" className="text-dank-orange underline-offset-4 hover:no-underline">branding</Link> and <Link href="/services/positioning" className="text-dank-orange underline-offset-4 hover:no-underline">positioning</Link> work—we also offer copywriting, social media management, and personal brand management when the brief calls for it.
         </p>
         <Link href="/#contact" className="btn mt-8">
           Get in touch

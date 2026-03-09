@@ -5,19 +5,19 @@ import { useState } from 'react';
 const faqs = [
   {
     question: 'What\'s included?',
-    answer: 'Depends on the package. We can do branding only, copy only, web only, or any combination. One brief, one team—we scope it clearly before we start.'
+    answer: 'Depends on the package. We can do strategy only, branding only, positioning only, or any combination. Copywriting, web development, social media management—we scope it clearly before we start.'
   },
   {
     question: 'How long does it take?',
-    answer: 'From a few weeks for a single deliverable (e.g. a logo or a small site) to a couple of months for a full brand + web project. We’ll give you a timeline in the brief.'
+    answer: 'From a few weeks for a single deliverable (e.g. a logo, copywriting, or a small site) to a couple of months for a full strategy + branding + positioning project. We’ll give you a timeline in the brief.'
   },
   {
     question: 'Who do you work with?',
-    answer: 'Startups and established brands that want a cohesive identity—brand, copy, and web in one place. We work best with clients who know their audience and are ready to make decisions.'
+    answer: 'Startups and established brands that want a cohesive identity—strategy, branding, and positioning in one place. Copywriting, web development, social media—we work best with clients who know their audience and are ready to make decisions.'
   },
   {
     question: 'Can we start small?',
-    answer: 'Yes. Start with one service (e.g. a brand refresh or a new site) and add copy or more later. No lock-in—we keep it flexible.'
+    answer: 'Yes. Start with one service (e.g. strategy, branding, or positioning) and add copywriting, web development, or social media later. No lock-in—we keep it flexible.'
   }
 ];
 

@@ -5,7 +5,6 @@ import { WhatYouGet } from '../components/what-you-get';
 import { PackagesSection } from '../components/packages-section';
 import { HowWeWork } from '../components/how-we-work';
 import { CtaBlock } from '../components/cta-block';
-import { ComparisonTable } from '../components/comparison-table';
 import { Testimonials } from '../components/testimonials';
 import { OurWork } from '../components/our-work';
 import { ResourcesSection } from '../components/resources-section';
@@ -22,7 +21,6 @@ export default function Page() {
       <PackagesSection />
       <HowWeWork />
       <CtaBlock />
-      <ComparisonTable />
       <Testimonials />
       <OurWork />
       <ResourcesSection />

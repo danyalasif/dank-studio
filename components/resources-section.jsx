@@ -1,9 +1,21 @@
 import Link from 'next/link';
 
-const resources = [
-  { title: 'Coming soon', href: '/#resources', description: 'Guides and notes from DANK Studio' },
-  { title: 'Coming soon', href: '/#resources', description: 'Brand and copy tips' },
-  { title: 'Coming soon', href: '/#resources', description: 'Web and process notes' }
+const pillars = [
+  {
+    title: 'Strategy',
+    href: '/services/strategy',
+    description: 'Content strategy, social media management, copywriting. Guides and deep dives.'
+  },
+  {
+    title: 'Branding',
+    href: '/services/branding',
+    description: 'Identity, logos, guidelines. What branding means and how we approach it.'
+  },
+  {
+    title: 'Positioning',
+    href: '/services/positioning',
+    description: 'Market positioning, personal brand, messaging. Stand out and be remembered.'
+  }
 ];
 
 export function ResourcesSection() {
@@ -14,18 +26,20 @@ export function ResourcesSection() {
           Resources
         </h2>
         <p className="mb-12 text-lg text-navy-black-300">
-          DANK Studio notes—guides, tips, and process. More coming soon.
+          Pillar pages and blog posts—guides, tips, and how we think about strategy, branding, and positioning.
         </p>
       </div>
-      <ul className="mx-auto flex max-w-3xl flex-wrap justify-center gap-6">
-        {resources.map((r) => (
-          <li key={r.title + r.description}>
+      <ul className="grid w-full grid-cols-1 gap-8 sm:grid-cols-3">
+        {pillars.map((p) => (
+          <li key={p.href}>
             <Link
-              href={r.href}
-              className="block rounded-xl border border-eggshell-200 bg-white px-6 py-4 shadow-sm transition hover:border-dank-orange-200 hover:text-dank-orange"
+              href={p.href}
+              className="group block rounded-2xl border-2 border-eggshell-200 bg-white p-10 shadow-sm transition hover:border-dank-orange-200 hover:shadow-lg hover:text-dank-orange sm:p-12"
             >
-              <span className="font-heading font-semibold text-navy-black">{r.title}</span>
-              <span className="mt-1 block text-sm text-navy-black-300">{r.description}</span>
+              <span className="font-heading block text-2xl font-semibold text-navy-black group-hover:text-dank-orange sm:text-3xl">
+                {p.title}
+              </span>
+              <span className="mt-3 block text-base text-navy-black-300 sm:text-lg">{p.description}</span>
             </Link>
           </li>
         ))}

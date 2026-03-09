@@ -7,11 +7,11 @@ const packages = [
     description: 'For early-stage brands or one-off projects.',
     price: 'Get a quote',
     popular: false,
-    features: ['One service (brand, copy, or web)', 'Clear scope and timeline']
+    features: ['One service (strategy, branding, or positioning)', 'Clear scope and timeline']
   },
   {
     title: 'Core',
-    subtitle: 'Brand + copy or copy + web',
+    subtitle: 'Strategy + branding or branding + positioning',
     description: 'For brands that want two pillars in sync.',
     price: 'Get a quote',
     popular: true,
@@ -20,10 +20,10 @@ const packages = [
   {
     title: 'Growth',
     subtitle: 'Full stack',
-    description: 'Brand, copy, and web—one team, one identity.',
+    description: 'Strategy, branding, and positioning—one team, one identity.',
     price: 'Get a quote',
     popular: false,
-    features: ['Branding, copy, and web', 'One team end to end', 'Ongoing support options']
+    features: ['Strategy, branding, and positioning', 'Copywriting, web development, social media', 'Ongoing support options']
   }
 ];
 
@@ -91,6 +91,14 @@ export function PackagesSection() {
           </div>
         ))}
       </div>
+      <p className="mt-10 text-center">
+        <Link
+          href="/packages"
+          className="text-dank-orange font-medium underline-offset-4 hover:underline"
+        >
+          Want to know more what&apos;s included in each package?
+        </Link>
+      </p>
     </section>
   );
 }

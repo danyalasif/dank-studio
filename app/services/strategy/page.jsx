@@ -3,22 +3,22 @@ import Image from 'next/image';
 import { ArticleLayout } from 'components/article-layout';
 
 const processSteps = [
-  { num: '1', title: 'Discovery', desc: "We get clear on who you are, who you're for, and what already exists." },
-  { num: '2', title: 'Exploration', desc: 'We explore directions—mood, references, and early concepts.' },
-  { num: '3', title: 'Refinement', desc: 'We narrow down, iterate, and lock in the direction.' },
-  { num: '4', title: 'Delivery', desc: 'Final files, guidelines, and a system you can actually use.' }
+  { num: '1', title: 'Brief & goals', desc: 'We understand your audience, channels, and what success looks like.' },
+  { num: '2', title: 'Audit & research', desc: "We review what you have and what's working (or not)." },
+  { num: '3', title: 'Strategy document', desc: 'A clear plan: what to say, where, and how it fits together.' },
+  { num: '4', title: 'Execute & iterate', desc: 'We deliver—copy, content, campaigns—and refine as we go.' }
 ];
 
 const blogPosts = [
-  { title: 'What is personal branding?', href: '/blog/branding/what-is-personal-branding' },
-  { title: 'What is company branding?', href: '/blog/branding/what-is-company-branding' },
-  { title: 'Personal vs company branding: the key differences', href: '/blog/branding/personal-vs-company-branding' }
+  { title: 'What is content strategy?', href: '/blog/strategy/what-is-content-strategy' },
+  { title: 'How to build a social media strategy', href: '/blog/strategy/how-to-build-social-media-strategy' },
+  { title: 'What is a brand strategy?', href: '/blog/strategy/what-is-brand-strategy' }
 ];
 
 export const metadata = {
-  title: 'Branding',
+  title: 'Strategy',
   description:
-    'Identity, guidelines, logos, and a look that sticks. Web development and website management. DANK Studio branding services.'
+    'Content strategy, social media management, copywriting, and campaigns. DANK Studio strategy services for startups and brands.'
 };
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
       <div className="relative h-[280px] w-full overflow-hidden bg-gradient-to-br from-alice-blue via-eggshell to-off-white sm:h-[360px]">
         <Image src="/images/grid-bg.svg" alt="" fill className="object-cover opacity-30" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="font-heading text-4xl font-semibold text-navy-black sm:text-5xl">Branding</h1>
+          <h1 className="font-heading text-4xl font-semibold text-navy-black sm:text-5xl">Strategy</h1>
         </div>
       </div>
       <ArticleLayout
@@ -56,25 +56,25 @@ export default function Page() {
               ← Back to services
             </Link>
             <p className="mb-16 text-xl leading-relaxed text-navy-black-300">
-              Identity, guidelines, and a look that sticks—so your brand is recognisable and consistent everywhere. We don&apos;t do &quot;brand&quot; as a one-off logo drop. We build a system.
+              The plan before the build. We help you figure out where you&apos;re going—content strategy, social media management, copywriting, and campaigns—so you can execute with clarity.
             </p>
             <section className="space-y-16">
               <div>
-                <h2 className="font-heading mb-6 text-2xl font-semibold text-navy-black">What branding means to us</h2>
+                <h2 className="font-heading mb-6 text-2xl font-semibold text-navy-black">What strategy means to us</h2>
                 <div className="space-y-6 text-lg leading-relaxed text-navy-black-300">
                   <p>
-                    A brand is more than a logo. It&apos;s the sum of how you look, sound, and feel—across your website, social, print, and anywhere you show up. We build a system: <span className="rounded bg-dank-orange/10 px-1.5 py-0.5 font-medium text-navy-black">logo, colour, type, imagery, and tone</span> that work together.
+                    Strategy is the map before the journey. It answers: <span className="rounded bg-dank-orange/10 px-1.5 py-0.5 font-medium text-navy-black">who are you talking to</span>, what do they need, and what should you say? We don&apos;t hand you a generic playbook.
                   </p>
                   <p>
-                    That way, whether it&apos;s you or someone you hire, everyone can use it without making it up as they go. No more &quot;what font was that?&quot; or &quot;which version of the logo?&quot;—you have one source of truth.
+                    We build a plan that fits your goals, your audience, and your channels—whether that&apos;s LinkedIn, TikTok, your website, or all of the above. Every brand is different, and your strategy should reflect that.
                   </p>
                   <div className="rounded-xl border-l-4 border-dank-orange bg-alice-blue/50 p-6">
                     <p className="text-navy-black-300">
-                      Consistency builds recognition. When your audience sees your content—on LinkedIn, your site, or a pitch deck—they should know it&apos;s you. That&apos;s what a brand system does.
+                      A good strategy gives you clarity. You stop guessing what to post, when to post, and whether it&apos;s working. You have a framework—and you can execute with confidence.
                     </p>
                   </div>
                   <p>
-                    We don&apos;t do one-off logo drops. We explore directions, refine, and lock it in with simple guidelines and files you can actually use. Web development and website management are available when you need a site that matches your brand.
+                    From content pillars to tone of voice, from cadence to channel mix—we map it out so you&apos;re not flying blind. The result: a document you can follow, share with your team, or hand to us to execute.
                   </p>
                 </div>
               </div>
@@ -82,13 +82,13 @@ export default function Page() {
                 <h2 className="font-heading mb-6 text-2xl font-semibold text-navy-black">How we work with you</h2>
                 <div className="space-y-6 text-lg leading-relaxed text-navy-black-300">
                   <p>
-                    We start with your goals and audience. No cookie-cutter process—we adapt to what you need. If you have existing assets, we build on them. If you&apos;re starting from scratch, we explore from a clean slate.
+                    We start with a brief and an audit. What do you have? What&apos;s working? What&apos;s not? We dig into your audience, your goals, and your current content—so we&apos;re not starting from assumptions.
                   </p>
                   <p>
-                    Our process is straightforward: we get clear on who you are and who you&apos;re for, then we explore directions, refine, and lock it in. You get guidelines, files, and a system—not a one-and-done deliverable.
+                    Then we shape a strategy document: content pillars, tone, cadence, and how it all connects. This becomes your north star. You can run with it yourself, or we can execute—copywriting, social media management, LinkedIn posts, carousels, TikTok video editing.
                   </p>
                   <p>
-                    <span className="font-medium text-dank-orange">We scope it to fit.</span> Copywriting, social media management, and personal brand support are available as part of a full package when the brief calls for it.
+                    <span className="font-medium text-dank-orange">We scope it to fit.</span> Some clients need a full strategy plus execution. Others need the plan and a handover. We adapt to what you need.
                   </p>
                 </div>
               </div>

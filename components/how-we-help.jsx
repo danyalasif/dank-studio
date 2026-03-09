@@ -2,19 +2,22 @@ import Link from 'next/link';
 
 const services = [
   {
+    title: 'Strategy',
+    href: '/services/strategy',
+    description:
+      'The plan before the build. Content strategy, social media management, copywriting, and campaigns—so you execute with clarity.'
+  },
+  {
     title: 'Branding',
     href: '/services/branding',
-    description: 'Identity, guidelines, and a look that sticks—logos, colour, type, and tone in one system.'
+    description:
+      'Identity, guidelines, and a look that sticks. Logos, colour, type, and tone—plus web development and website management when you need it.'
   },
   {
-    title: 'Copywriting',
-    href: '/services/copywriting',
-    description: 'Voice and words that actually sound like you. Web, social, and campaigns—no corporate fluff.'
-  },
-  {
-    title: 'Web development',
-    href: '/services/web-development',
-    description: 'Sites and digital products that work. Fast, clear, and aligned with your brand.'
+    title: 'Positioning',
+    href: '/services/positioning',
+    description:
+      'Where you sit in the market and how you sound. Personal brand management, LinkedIn posts, carousels, TikTok video editing—messaging that differentiates.'
   }
 ];
 
@@ -23,23 +26,23 @@ export function HowWeHelp() {
     <section id="services" className="scroll-mt-8 bg-alice-blue px-8 py-20 sm:px-12 sm:py-28 md:px-16 md:py-36 lg:px-24 xl:px-32">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-heading mb-4 text-3xl font-semibold text-navy-black sm:text-4xl">
-          How we help
+          ✨ How we help
         </h2>
         <p className="mb-12 text-lg text-navy-black-300">
-          One team for branding, copy, and web. Your brief, your voice, one consistent identity.
+          One team for strategy, branding, and positioning. Copywriting, web development, and social media—your brief, your voice, one consistent identity.
         </p>
       </div>
-      <ul className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-3">
+      <ul className="grid w-full gap-8 sm:grid-cols-3">
         {services.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="group block rounded-xl border border-alice-blue bg-white p-6 shadow-sm transition hover:border-dank-orange-200 hover:shadow-md"
+              className="group block rounded-xl border border-alice-blue bg-white p-10 shadow-sm transition hover:border-dank-orange-200 hover:shadow-md"
             >
-              <h3 className="font-heading mb-2 text-xl font-semibold text-navy-black group-hover:text-dank-orange">
+              <h3 className="font-heading mb-3 text-2xl font-semibold text-navy-black group-hover:text-dank-orange">
                 {item.title}
               </h3>
-              <p className="text-sm text-navy-black-300">{item.description}</p>
+              <p className="text-base text-navy-black-300">{item.description}</p>
             </Link>
           </li>
         ))}
