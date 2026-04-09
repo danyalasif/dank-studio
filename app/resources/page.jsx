@@ -1,20 +1,10 @@
-import Link from 'next/link';
-import { ResourcesSection } from '../../components/resources-section';
+import { ResourcesCalculator } from '../../components/resources-calculator';
 
 export const metadata = {
   title: 'Resources',
-  description: 'DANK Studio notes—guides, tips, and process.'
+  description: 'Interactive content ROI calculator and resource hub for connecting content work to business results.'
 };
 
 export default function ResourcesPage() {
-  return (
-    <div>
-      <div className="bg-off-white px-8 py-8 sm:px-12 md:px-16 lg:px-24 xl:px-32">
-        <Link href="/#resources" className="text-sm text-navy-black-300 underline-offset-4 hover:text-dank-orange">
-          ← Back to home
-        </Link>
-      </div>
-      <ResourcesSection />
-    </div>
-  );
+  return <ResourcesCalculator />;
 }
