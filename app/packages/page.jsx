@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PackagesClient } from './packages-client';
@@ -5,7 +6,7 @@ import { PackagesClient } from './packages-client';
 export const metadata = {
   title: 'Packages & pricing',
   description:
-    'Core packages for web presence, content & growth, and full retainers. UK/US and Pakistan pricing, add-ons, and how we deliver.'
+    'Core packages for web presence, content & growth, and full retainers. US/UK pricing by default; add ?pricing=parity for Pakistan parity rates. Add-ons and how we deliver.'
 };
 
 export default function PackagesPage() {
@@ -17,7 +18,7 @@ export default function PackagesPage() {
           <p className="text-sm font-medium uppercase tracking-wide text-dank-orange">Pricing</p>
           <h1 className="font-heading text-4xl font-semibold text-navy-black sm:text-5xl">Packages</h1>
           <p className="max-w-xl text-sm text-navy-black-300 sm:text-base">
-            Core packages, add-ons, and our delivery process — pick a market to see local pricing.
+            Core packages, add-ons, and our delivery process — US/UK rates by default.
           </p>
         </div>
       </div>
@@ -26,7 +27,9 @@ export default function PackagesPage() {
           ← Back to home
         </Link>
       </div>
-      <PackagesClient />
+      <Suspense fallback={<div className="min-h-[320px] bg-off-white" aria-hidden />}>
+        <PackagesClient />
+      </Suspense>
     </article>
   );
 }
